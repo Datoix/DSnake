@@ -118,8 +118,8 @@ void draw(SDL_Renderer* renderer, struct Game* game) {
 
 	// draw head in different color
 	SDL_SetRenderDrawColor(renderer, HEAD_COLOR.r, HEAD_COLOR.g, HEAD_COLOR.b, HEAD_COLOR.a);
-	rect.x = game->snake->head->coord.x * game->col_size;
-	rect.y = game->snake->head->coord.y * game->row_size;
+	rect.x = game->snake->head->coord.x * game->col_size + 1;
+	rect.y = game->snake->head->coord.y * game->row_size + 1;
 
 	SDL_RenderFillRect(renderer, &rect);
 
