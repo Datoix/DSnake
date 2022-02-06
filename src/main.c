@@ -7,7 +7,7 @@ const int HEIGHT = 700;
 const int ROWS = 20;
 const int COLS = 20;
 
-int main(int argc, char* argv[]) {
+int main(void) {
 	srand(time(0));
 	SDL_Init(SDL_INIT_VIDEO);
 
